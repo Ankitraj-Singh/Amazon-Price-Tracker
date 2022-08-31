@@ -33,7 +33,7 @@ def checking_price():
 
     #Finding the elements
     product_title = soup.find('span', id='productTitle').text.strip()
-    product_price = soup.find('span', id='priceblock_ourprice').text.strip()
+    product_price = soup.find('span', class_='a-offscreen').text.strip()
 
     # using replace() to remove currency symbols
     for i in currency_symbols : 
